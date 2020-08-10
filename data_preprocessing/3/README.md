@@ -5,4 +5,4 @@ __Gender:__ male <br/>
 __Ethnicity:__ asian <br/>
 __Age:__ 22 <br/>
 __Self-reported Liebowitz social anxiety score:__ 72 <br/>
-__Self-reported Liebowitz social anxiety category:__ 2 <br/>
+__Anxiety category:__ 2 <br/>
