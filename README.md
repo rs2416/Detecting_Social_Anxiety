@@ -2,7 +2,7 @@
 	<sub>Imperial College London<br>Dyson School of Design Engineering</sub>
 </p>
 <h1 align="center">
-Detecting Social Anxiety in Young People Using Physiological Data Collected From Wearables
+Detecting Subclinical Social Anxiety Using Physiological Data from a Wrist-worn Wearable: A Small-Scale Feasibility Study 
 </h1>
 
 
