@@ -8,23 +8,23 @@ Detecting Social Anxiety in Young People Using Physiological Data Collected From
 
 ## 1. Overview
 
-This project investigates whether social anxiety can be detected in young people using physiological data recorded from a wearable and Machine Learning (ML) techniques. This repository contains the full dataset and code needed to recreate the classification models and reproduce the results within the report; as well as this the notebooks contain functions that enable further experimentation.
+This study aimed to investigate whether subclinical social anxiety in young adults can be detected using physiological data obtained from wearable sensors, including Heart Rate (HR), Skin Temperature (ST) and Electrodermal Activity (EDA). This repository contains the full dataset and code needed to recreate the classification models and reproduce the results within the paper; as well as this the Python notebooks contain functions that enable further experimentation.
 
 #### 1.1. Nature of the dataset
 
-The dataset consists of Heart Rate (HR) data, Skin Temperature (ST) data and Electrodermal Activity (EDA) data, which is labelled in various ways depending on the classification context. The physiological data was recorded by a multi-sensor wristband wearable called E4 Empatica.
+The dataset consists of Heart Rate (HR) data, Skin Temperature (ST) data and Electrodermal Activity (EDA) data. This physiological data was collected using an E4 Empatica wearable device. 
 
-This data was collected during twelve experiments involving young people who have been identified as subclinically socially anxious based on their scores from the self-reported version of the Liebowitz Social Anxiety Scale (LSAS-SR). The data was collected during an impromptu speech task used to invoke a social anxiety response (invoking both anticipation and reactive social anxiety). The task initiated with a relaxation period (invoking a baseline response) followed by task announcement and preparation period (invoking anticipation anxiety), this was then followed by performing the impromptu speech task (invoking reactive anxiety).
+This data was collected during impromptu speech tasks involving young adults (N = 12) with self-reported subclinical social anxiety (measured by the widely used self-reported version of the Liebowitz Social Anxiety Scale, LSAS-SR). 
 
 #### 1.2. Description of the ML experiments
 
-Various classification algorithms such as Support Vector Machine (SVM), Random Forest, Decision Tree and K-Nearest Neighbours (KNN) were used to train models for three different ML experiments. Furthermore, the following experiments were carried out using datasets with all modalities combined, as well as datasets with only singular modalities.
+Using the pre-processed data and following a supervised machine learning approach, various classification algorithms such as Support Vector Machine, Decision Tree, Random Forest and K-Nearest Neighbours (KNN) were used to develop models for three different contexts. Furthermore, the following experiments were carried out using datasets with all modalities combined, as well as datasets with only singular modalities.
 
-__Experiment (1)__ investigates whether models can be trained to classify baseline and socially anxious states.
+__Experiment (1)__ investigates whether models can be trained to classify between baseline and socially anxious states.
 
 __Experiment (2)__ investigates whether models can be trained to differentiate between baseline, anticipation anxiety and reactive anxiety states.
 
-__Experiment (3)__ investigates whether models can be trained to differentiate between social anxiety experienced by individuals with differing levels of social anxiety.
+__Experiment (3)__ investigates whether models can be trained to classify between social anxiety experienced by individuals with differing social anxiety severity.
 
 __Results & Evaluation__ The models were then evaluated using 10-fold cross validation as a performance index. Confusion matrices were also used to examine the classification accuracies per class.
 
@@ -67,7 +67,7 @@ data_processing/
 You can view the notebooks with their outputs in this Github without running the notebooks. However, if you would like to run the notebooks firsthand, you must first download a zip file of this repository, then you must download [Anaconda Navigator](https://docs.anaconda.com/anaconda/install/). Following the download, you must launch Anaconda Navigator and click 'Jupyter Notebook'. Once Jupyter Notebook is launched, navigate to where the extracted zip folder is and open a notebook of your choice. You must then download each dependency (see below). After downloading the dependencies you should be able to run any of the notebooks.
 
 #### Dependencies: 
-The notebooks utilise NumPy, Matplotlib, Seaborn, Scikit-learn and Pandas dependencies. To download the dependencies you must write the following commands in a code block in a Jupyter notebook and run the code block (this only needs to take place once). _Note:_ Matplotlib version 3.1.0 was installed as there is a bug in the latest version that affects the rendering of seaborn plots
+The notebooks utilise NumPy, Matplotlib, Seaborn, Scikit-learn and Pandas dependencies, therefore they must be downloaded before using the notebooks. _Note:_ Matplotlib version 3.1.0 was installed as there is a bug in the latest version that affects the rendering of seaborn plots
 
 ```
  pip install numpy
@@ -89,9 +89,9 @@ This project was powered by:
 ## 5. Quick Links 
 
 <p align="left">
-	<a href="https://github.com/rs2416/Predicting_Social_Anxiety/blob/master/data_processing/Supervised_Machine_Learning_Notebook.ipynb">Supervised ML notebook</a>
+	<a href="https://github.com/rs2416/Detecting_Social_Anxiety/blob/master/data_processing/Supervised_Machine_Learning_Notebook.ipynb">Supervised ML notebook</a>
 </p>
 <p align="left">
-	<a href="https://github.com/rs2416/Predicting_Social_Anxiety/blob/master/data_preprocessing/1/Data_Preprocessing_Notebook.ipynb" target="_blank">An example of a preprocessing notebook</a>
+	<a href="https://github.com/rs2416/Detecting_Social_Anxiety/blob/master/data_preprocessing/1/Data_Preprocessing_Notebook.ipynb" target="_blank">An example of a preprocessing notebook</a>
 </p>
 
